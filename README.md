@@ -1,5 +1,5 @@
-# repeat-open-url
-自动间隔时间重复打开网页
+# youtube-auto-open
+自动间隔时间重复打开Youtube的网页
 
 
 前置条件
@@ -12,10 +12,9 @@
 
 下载到本地后，打开终端（英文名叫terminal）中执行：
 ```
-cd 【文件位置例如/Users/fayezhe/Downloads/repeat-open-url/】
+cd 【文件位置例如/Users/fayezhe/Downloads/youtube-auto-open/】
 ```
-<img width="642" alt="image" src="https://user-images.githubusercontent.com/111101393/212727046-abfc66d8-396b-4b57-9f88-2966d0ebb999.png">
-
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/111101393/213234902-5da49666-c9b1-42e5-aa36-0c0d0d1f2e85.png">
 再执行安装依赖：
 ```
 npm i
