@@ -20,7 +20,7 @@ cd 【文件位置例如/Users/fayezhe/Downloads/youtube-auto-open-main/】
 ```
 npm i
 ```
-<img width="600" alt="image" src="https://user-images.githubusercontent.com/111101393/212727232-38900240-5594-4717-8324-bd3529940d4b.png">
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/111101393/213237224-f222acf7-5d0e-412d-bb60-163bc7ed2bc8.png">
 
 ## 配置config文件
 找到此项目的config.json文件，用编辑器修改配置选项
@@ -42,7 +42,7 @@ node index.js
 ```
 终端打印出这样的信息即正常运行
 
-<img width="904" alt="image" src="https://user-images.githubusercontent.com/111101393/213223667-64df9e40-0fe3-46fc-a461-0cbca037cf44.png">
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/111101393/213223667-64df9e40-0fe3-46fc-a461-0cbca037cf44.png">
 
 系统会自动打开这样的浏览器
 
