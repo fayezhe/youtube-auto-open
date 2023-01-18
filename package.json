@@ -1,0 +1,15 @@
+{
+  "name": "repeat-open-url",
+  "description": "自动间隔时间重复打开网页",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "puppeteer": "^19.5.2"
+  },
+  "author": "fayezhe",
+  "license": "MIT"
+}
