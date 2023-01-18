@@ -8,13 +8,14 @@
 # 开始使用
 点击
 
-<img width="438" alt="image" src="https://user-images.githubusercontent.com/111101393/212684822-860a96f3-fcc7-4f24-ad7e-9ed3aeeaaaa3.png">
+<img width="451" alt="image" src="https://user-images.githubusercontent.com/111101393/213235541-8b329b26-2dfb-45a3-8c25-9ea6f0852086.png">
 
 下载到本地后，打开终端（英文名叫terminal）中执行：
 ```
-cd 【文件位置例如/Users/fayezhe/Downloads/youtube-auto-open/】
+cd 【文件位置例如/Users/fayezhe/Downloads/youtube-auto-open-main/】
 ```
-<img width="600" alt="image" src="https://user-images.githubusercontent.com/111101393/213234902-5da49666-c9b1-42e5-aa36-0c0d0d1f2e85.png">
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/111101393/213236168-7e8c9a44-299e-41ed-9fe4-c29a58367c81.png">
+
 再执行安装依赖：
 ```
 npm i
