@@ -12,9 +12,9 @@
 
 下载到本地后，打开终端（英文名叫terminal）中执行：
 ```
-cd 【文件位置例如/Users/fayezhe/Downloads/youtube-auto-open-main/】
+cd 【文件位置例如/Users/你的用户名/Downloads/youtube-auto-open-main/】
 ```
-<img width="600" alt="image" src="https://user-images.githubusercontent.com/111101393/213236168-7e8c9a44-299e-41ed-9fe4-c29a58367c81.png">
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/111101393/213237755-b301b0d1-6561-43ff-9a77-02391a549330.png">
 
 再执行安装依赖：
 ```
