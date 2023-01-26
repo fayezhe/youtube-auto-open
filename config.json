@@ -6,5 +6,6 @@
     "https://www.youtube.com/watch?v=DP8Esat08rs",
     "https://www.youtube.com/watch?v=DRaYnlu8LWc"
   ],
-  "count": 100
+  "count": 100,
+  "proxyServer": ""
 }
