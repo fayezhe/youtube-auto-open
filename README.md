@@ -33,7 +33,8 @@ npm i
     "https://www.youtube.com/watch?v=DP8Esat08rs",
     "https://www.youtube.com/watch?v=DRaYnlu8LWc"
   ],
-  "count": 100
+  "count": 100,
+  "proxyServer": "" // 代理地址，例如http://127.0.0.1:33210，没有则不填
 }
 ```
 开始执行
@@ -62,7 +63,7 @@ ps: 也可以多开终端命令窗口执行相同的命令，这样可以同时�
 ```
 node data.js
 ```
-会导出以开始时间命名的「01-18 23:56.json」文件记录播放量数据
+不会打开浏览器并且会导出以开始时间命名的「01-18 23:56.json」文件记录播放量数据
 如
 ```
 {
