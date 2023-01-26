@@ -1,7 +1,7 @@
 
 console.log('Hello there');
 const config = require('./config');
-const { urlList, duration, count } = config;
+const { urlList, duration, count,proxyServer } = config;
 const puppeteer = require('puppeteer');
 // 函数实现，参数单位秒；
 const wait = (s) => {
@@ -35,6 +35,7 @@ const open = async () => {
     waitUntil: 'load',
     timeout: 0,
     ignoreHTTPSErrors: true,
+    args: [ '--proxy-server=' + proxyServer,'--no-sandbox', '--disable-setuid-sandbox' ]
   });
   let pageList = [];
   for (let i = 0; i < urlList.length; i ++) {
@@ -53,7 +54,7 @@ const open = async () => {
     
     setTimeout(async () => {
       const button = await pageList[i].$('.ytp-ad-skip-button');
-      button && button.click();
+      button && button.evaluate(b => b.click());
     }, 5000);
   };
   await wait(duration);
