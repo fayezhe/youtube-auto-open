@@ -1,7 +1,7 @@
 
 console.log('Hello there');
 const config = require('./config');
-const { urlList, duration, count } = config;
+const { urlList, duration, count, proxyServer} = config;
 const fs = require('fs');
 const puppeteer = require('puppeteer');
 // 函数实现，参数单位秒；
@@ -34,10 +34,11 @@ const startTime = formatDate(new Date(),'MM-DD hh:mm');
 const open = async () => {
   const time = formatDate(new Date(),'MM-DD hh:mm');
   const browser = await puppeteer.launch({
-    headless: false,
+    headless: true,
     waitUntil: 'load',
     timeout: 0,
     ignoreHTTPSErrors: true,
+    args: [ '--proxy-server=' + proxyServer,'--no-sandbox', '--disable-setuid-sandbox' ]
   });
   let pageList = [];
   data[time] = {};
@@ -54,10 +55,11 @@ const open = async () => {
       title = title.replace(' - YouTube','');
     }
     console.log(time, title, '播放次数', playNum);
+    
     setTimeout(async () => {
       const button = await pageList[i].$('.ytp-ad-skip-button');
-      button && button.click();
-    }, 5000);
+      button && button.evaluate(b => b.click());
+    }, 6000);
     data[time][title] = playNum;
   };
   fs.writeFile(`./${startTime}.json`, JSON.stringify(data), function (err) {
